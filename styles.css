@@ -313,11 +313,11 @@ header {
 
 
 /* services */
-/* @media (max-width: 768px), (max-width: 1024px) {
+@media (max-width: 768px), (max-width: 1024px) {
   .service{
     margin-top: 200px;
   }
-} */
+}
 
 .service {
   height: 100vh;
@@ -328,6 +328,9 @@ header {
 
 .service-title {
   text-align: center;
+  font-size: 96px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
 }
 
 .service-list {
@@ -394,8 +397,32 @@ header {
     max-width: 100%;
   }
 }
+@media (max-width: 768px), (max-width: 1024px) {
+  .projects {
+    margin-top: 400px;
+  }
+  .projects h1 {
+    font-size: 72px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+  }
+}
+
 /* projects */
 
+.projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.projects h1.projects-title {
+  font-size: 96px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
 
 .projects-case {
   display: grid;
