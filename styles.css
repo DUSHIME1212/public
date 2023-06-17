@@ -21,9 +21,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  color: #fff;
-  background-color: rgba(75, 72, 72, 0.8);
-  backdrop-filter: blur(10px);
+  color: #000000;
+  background-color: #fdfdfd59;
+  backdrop-filter: blur(2px);
   transition: background-color 0.5s, backdrop-filter 0.5s;
 }
 
@@ -50,12 +50,21 @@ header {
 
 .navlinks li {
   margin-right: 20px;
+  cursor: pointer;
+  color: #000000
+}
+.navlinks li:hover {
+  margin-right: 20px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+  color: #d4f600;
 }
 
 .navlinks a {
   color: #333;
   text-decoration: none;
   transition: color 0.3s;
+  cursor: pointer;
 }
 
 .navlinks a:hover {
@@ -93,6 +102,7 @@ header {
   }
 
   .navlinks li:hover {
+    box-shadow: 0 0 10px #d4f600;
     color: #d4f600;
   }
 }
@@ -145,7 +155,7 @@ header {
 
 .icon i:hover {
   color: #d4f600;
-  box-shadow: 0 0 10px #d4f600;
+  filter: drop-shadow(0 0 10px #d4f600);
 }
 
 
