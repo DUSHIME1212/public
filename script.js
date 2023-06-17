@@ -88,3 +88,32 @@ document.addEventListener('DOMContentLoaded', function () {
   handleScroll();
 });
 
+// email
+(function() {
+  emailjs.init('YOUR_USER_ID'); // Replace YOUR_USER_ID with your actual EmailJS User ID
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Fetch form data
+    var formData = {
+      name: this.name.value,
+      email: this.email.value,
+      subject: this.subject.value,
+      message: this.message.value
+    };
+
+    // Send email
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+      .then(function(response) {
+        alert('Your message has been sent successfully!');
+        // You can add additional code or redirect the user to a thank-you page here
+      }, function(error) {
+        console.error('Error sending email:', error);
+        alert('An error occurred while sending your message. Please try again later.');
+      });
+
+    // Reset form fields
+    this.reset();
+  });
+})();

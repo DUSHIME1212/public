@@ -132,6 +132,7 @@ header {
 .mainpage h2{
   font-size: medium;
   font-weight: lighter;
+  text-align: center;
 }
 .icon {
   margin-top: 28px;
