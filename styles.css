@@ -117,7 +117,7 @@ header {
   width: 200px;
   border-radius: 50px;
   object-fit: cover;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .mainpage h2{
   font-size: medium;
@@ -133,6 +133,14 @@ header {
   font-size: 24px;
   color: #fff;
   transition: background-color 0.3s, box-shadow 0.3s;
+}
+.mainpage h1{
+  font-size: 72px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  line-height: 3.5rem;
+  margin-bottom: 20px;
 }
 
 .icon i:hover {
@@ -167,8 +175,10 @@ header {
 .btn:hover {
   color: #333;
   border: transparent;
-  box-shadow: 0 0 10px #d4f600;
+  /* box-shadow: 0 0 10px #d4f600; */
   background-color: #d4f600;
+  background: #FFFFFF;
+  box-shadow: -25px -25px 200px rgba(255, 2, 2, 0.25), 15px 15px 200px rgba(0, 56, 255, 0.7);
 }
 
 
@@ -180,9 +190,15 @@ header {
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
+    justify-content: center;
     margin-bottom: 200px;
+  }
+  .about-section-content{
+    display: flex;
+    flex-direction: column;
+  
   }
 }
 
@@ -191,8 +207,19 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 0px 100px;
+  flex-direction: column;
+  padding:0 100px;
   height: 100vh;
+}
+.about-section h1{
+  font-size: 72px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+.about-section-content{
+  display: flex;
+  flex-direction: row;
+
 }
 
 .about-content {
@@ -418,7 +445,7 @@ header {
   align-items: center;
 }
 
-.projects h1.projects-title {
+.projects h1 ,.projects-title {
   font-size: 96px;
   font-weight: bold;
   font-family: 'Playfair Display', serif;
