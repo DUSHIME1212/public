@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // email
 (function() {
-  emailjs.init('YOUR_USER_ID'); // Replace YOUR_USER_ID with your actual EmailJS User ID
+  emailjs.init('dushimeaime'); // Replace 'dushimeaime' with your actual EmailJS User ID
 
   document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     // Send email
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+    emailjs.send('service_jz030ot', 'template_es7qzul', formData) // Replace 'service_jz030ot' and 'template_es7qzul' with your actual service and template IDs
       .then(function(response) {
         alert('Your message has been sent successfully!');
         // You can add additional code or redirect the user to a thank-you page here
@@ -117,3 +117,4 @@ document.addEventListener('DOMContentLoaded', function () {
     this.reset();
   });
 })();
+
