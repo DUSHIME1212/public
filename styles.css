@@ -538,15 +538,16 @@ header {
   color: #fff;
   background-color: #333;
 }
-@media (max-width: 768px){
-
-  .contact-section{
+@media (max-width: 768px) {
+  .contact-section {
     flex-direction: column;
   }
-  #contact-form{
-    width: 300px;
+  #contact-form {
+    width: 90%; /* Adjust the value as needed */
+    max-width: 100%;
   }
 }
+
 .contact-me h1{
   font-size: 96px;
   font-weight: bold;
