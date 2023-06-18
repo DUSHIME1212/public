@@ -9,13 +9,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
-  <title>portfolio</title>
+  <link rel="shortcut icon" href="/my portfolio design/fav.png" type="image/x-icon">
+  <title>HOSANNA Porfolio.</title>
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="logo">
-        Dushime.
+        <img src="/my portfolio design/logo.png" style="width: 80px;height: auto;" srcset="">
       </div>
       <label for="menu-toggle" class="menu-icon">
         <span></span>
@@ -183,34 +184,37 @@
             </div>
           </div>
         </section>
-        <section>
+        <section class="contact-me">
           <h1>GET IN TOUCH</h1>
           <p>Fill in the contact form below, and I’ll get back to you as soon as humanly possible.
             Let’s embark on a thrilling new journey together, one email at a time.
           </p>
-          <form id="contact-form" action="">
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-          
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required>
-          
-            <textarea id="message" name="message" placeholder="Enter your message here..." required></textarea>
-          
-            <button type="submit">Send Message</button>
-          
-          </form>
-          
-          <script src="https://cdn.emailjs.com/sdk/2.4.1/email.min.js"></script>
-          <script>
-          </script>
-          
+          <div class="contact-section">
+            <div class="img-contact">
+              <h2>Want to work together?</h2>
+              <p>Feel free to reach out for collaborations or just a friendly hello</p>
+              <a href="mailto:mdonavan33@gmail.com">mdonavan33@gmail.com</a>
+              <div class="icons">
+                <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="tel:+1234567890"><i class="fas fa-phone"></i></a>
+                <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i> </a>              
+              </div>
+            </div>
+            <form id="contact-form" action="">
+              <label for="name"></label>
+              <input type="text" id="name" placeholder="Name" name="name" required>
+              <label for="email"></label>
+              <input type="email" id="email" placeholder="Email" name="email" required>
+              <label for="message"></label>
+              <textarea id="message" name="message" placeholder="Enter your message here..." required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
         </section>
         
+        <script src="https://cdn.emailjs.com/sdk/2.4.1/email.min.js"></script>
   <script src="app.js"></script>
   <script src="script.js"></script>
 </body>
