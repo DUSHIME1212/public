@@ -546,6 +546,11 @@ header {
     width: 90%; /* Adjust the value as needed */
     max-width: 100%;
   }
+  input[type="text"],
+  input[type="email"],
+  textarea{
+    width: 300px;
+  }
 }
 
 .contact-me h1{
